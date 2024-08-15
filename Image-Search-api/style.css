@@ -1,0 +1,117 @@
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #403838;
+    font-family: "Poppins", sans-serif;
+}
+
+.nav{
+    background: linear-gradient(to right, rgb(219, 47, 47), rgb(255, 100, 100));
+}
+.nav h1{
+    text-align: center;
+    padding: 20px;
+    color: white;
+    /* width: 0; */
+}
+
+#form-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+
+#form-image input{
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    padding: 7px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    font-size: 0.8rem;
+}
+
+#form-image button{
+    width: 60px;
+    border: none;
+    border-radius: 5px;
+    padding: 7px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #403838;
+    color: white;
+}
+
+.search-results{
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin-top: 80px;
+
+}
+
+.search-result{
+    width: 30%;
+    height: 100%;
+    margin-bottom: 60px;
+    border-radius: 5px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+
+.search-result img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition:opacity 0.2s ease-in-out;
+}
+
+.search-result:hover img{
+    opacity: 0.8;
+}
+
+.search-result a{
+    font-size: 20px;
+    text-decoration: none;
+    color: whitesmoke;
+    display: block;
+    padding: 10px;
+    text-transform: capitalize;
+}
+
+#show-more-button{
+    background-color: #008cba;
+    font-size: 18px;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    display:block;
+    margin: 30px auto;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width:768px){
+    .search-result{
+        width: 45%;
+    }
+    .search-results{
+        padding: 20px;
+    }
+
+}
+
+@media screen and (max-width:480x){
+    .search-result{
+        width: 100%;
+
+    }
+    
+}
